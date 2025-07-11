@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Disabled</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #2c2c2c;
+            animation: backgroundBlink 1.5s infinite alternate;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-family: 'Verdana', sans-serif;
+            font-size: 2rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: neonGlow 1.5s infinite alternate;
+            margin: 0;
+        }
+
+        @keyframes backgroundBlink {
+            0% {
+                background-color: #ff1e1e;
+            }
+            100% {
+                background-color: #990000;
+            }
+        }
+
+        @keyframes neonGlow {
+            0% {
+                text-shadow: 0 0 2px #fff, 0 0 5px #ff4d4d, 0 0 7px #ff1e1e;
+            }
+            100% {
+                text-shadow: 0 0 5px #ff4d4d, 0 0 10px #ff1e1e, 0 0 15px #ff0000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>App Disabled</h1>
+</body>
+</html>
